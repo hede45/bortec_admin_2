@@ -4,11 +4,12 @@ import numpy as np
 from sklearn import preprocessing, svm, model_selection
 from sklearn.linear_model import LinearRegression
 import pickle
+from config import *
 
 # functional programming
 
-dbuser = 'phpmyadmin'
-dbpassword = '123!@#QWEasd'
+dbuser = DB_USER
+dbpassword = DB_PASSWORD
 
 conn = mysql.connector.connect(user=dbuser, password=dbpassword, host='localhost',
                                database='bortec_inv_system_db')
